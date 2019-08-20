@@ -37,10 +37,10 @@ Jupyter notebook
 
 6.) NAvigate to "api_keys.py" within Weatherpy repo. Paste your personal API key into corresponding area. Save file. 
 
-5.) Navigate to file directory for repo via Command line and run: 
+7.) Navigate to file directory for repo via Command line and run: 
 		
 	(virtual env) user$	Jupyter Notebook 
 
-6.) Open Yamah_weather_py.ipynb. Follow through code to explore analytical process and produce data visualizations. 
+8.) Open Yamah_weather_py.ipynb. Follow through code to explore analytical process and produce data visualizations. 
 	
-7.) Final images of data visualiations can be found in "/output_data" directory. 
+9.) Final images of data visualiations can be found in "/output_data" directory. 
