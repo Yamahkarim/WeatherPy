@@ -39,8 +39,8 @@ Jupyter notebook
 
 5.) Navigate to file directory for repo via Command line and run: 
 		
-	(virtual env) $	Jupyter Notebook 
+	(virtual env) user$	Jupyter Notebook 
 
 6.) Open Yamah_weather_py.ipynb. Follow through code to explore analytical process and produce data visualizations. 
 	
-7.) Final images of data visualiations can be found in "/img" directory and a brief text analysis of the findings are located in "Pymeceutical_Analysis.txt"
+7.) Final images of data visualiations can be found in "/output_data" directory. 
