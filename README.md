@@ -21,4 +21,26 @@ Python 3
 
 Open Weather Map API
 
-Jupyter notebook
+Jupyter notebook 
+
+##Explore 
+
+1.) Clone Repo 
+
+2.) Create and run a new Virtual enviornment for this project.
+
+3.) Download [Python 3](https://www.python.org/downloads/).
+
+4.) Install [Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/install.html) and [install matplotlib](https://matplotlib.org/users/installing.html). 
+
+5.) Navigate to [Open Weather Map](https://openweathermap.org/api) and create an account. An API key will be sent to your email.
+
+6.) NAvigate to "api_keys.py" within Weatherpy repo. Paste your personal API key into corresponding area. Save file. 
+
+5.) Navigate to file directory for repo via Command line and run: 
+		
+	(virtual env) $	Jupyter Notebook 
+
+6.) Open Yamah_weather_py.ipynb. Follow through code to explore analytical process and produce data visualizations. 
+	
+7.) Final images of data visualiations can be found in "/img" directory and a brief text analysis of the findings are located in "Pymeceutical_Analysis.txt"
