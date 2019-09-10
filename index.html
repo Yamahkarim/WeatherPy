@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html> 
+        
+<head>
+<title>WeatherPy Global</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="./style.css" />
+</head>
+<body>  
+  
+  <div class="container-fluid bg-image">
+        <nav class="navbar sticky-top bg-success">
+                <div class="container-fluid">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+                    <span class="sr-only">Toggle navigation</span>
+                  </button>
+                    <a class="navbar-brand" href="#">WeatherPy Global: <small>An International Climate Analaysis</small></a>
+                  </div>
+            
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                      <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Data Visualizations <span class="caret"></span></a>  
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="temp.html#">Temperature vs. Lattitude</a>
+                          <a class="dropdown-item" href="humid.html#">Humidity vs. Lattitude</a>
+                          <a class="dropdown-item" href="clouds.html#">Cloudiness vs. Lattitude</a>
+                          <a class="dropdown-item" href="wind.html#">Wind Speed vs. Lattitude</a>
+                        </div>
+                      </li>
+                      <li><a href="#Comparison">Comparison</a></li>
+                      <li><a href="table.html">Data</a></li>
+                    </ul>
+                  </div>
+                  <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+              </nav>
+            </div>
+      <div class="container-fluid">
+        <div class="row">
+            
+            <div class="col-lg-8">
+              <h1 class="text-success">Analysis</h1>
+              <hr>
+              <h3>Purpose</h3>
+             <h5> Does it <u><i>REALLY</i></u> get warmer by the equator?</h5>
+              <span class="border border-black">
+                <p>Though seemingly obvious, WeatherPy Global seeks to confirm the phenomenon by employing various Data Science tools and methods. This website illustrates the findings. </p>
+                </span>
+              <h3>Process</h3>
+              <p>Using the Python’s Pandas library, a random set over of 1500 latitudes and longitudes were created to compile a list of random cities from across the globe.</p>
+              <p>The Open Weather API was employed to call upon weather data for these cities. </p>
+              <p>4 different weather factors were compared to respective latitude coordinates for analysis: Maximum Temperature, Cloudiness, Humidity, and Wind Speed.</p>
+              <p> This data was then compiled into a CSV file and can be viewed here <link to data> </p>
+              <p> Finally, Python’s MatPlotLib library was used to visualize the results.</p>
+              <h3>Results</h3>
+              <p>As expected, the temperature in this sample increased with proximity to the equator.  </p>
+              <p>Our analysis unveils that humidity around the globe peaks around the equator as well.  </p>
+              <p>In regard to cloudiness versus latitude, an obvious correlation does not exist. It is interesting to note, however, that there is a strong concentration of cities sitting at 0, 80, and 100% cloudiness. </p>
+              <img class="img-thumbnail" src="images/Latitude_vs_Temp.png" alt="Latitude_vs_Temp" height="200" width="200">
+              </div>
+              <div class="col-lg-4">
+                <h1 class="text-success">Visualizations</h1>
+                <hr> 
+                <img class="img-thumbnail" src="Images/Latitude_vs_Temp.png" alt="Latitude_vs_Temp" height="200" width="200">
+                <img class="img-thumbnail" src="Images/Latitude_vs_Humidity.png" alt="Latitude_vs_Humidity" height="200" width="200">
+                <img class="img-thumbnail" src="Images/Latitude_vs_Clouds.png" alt="Latitude_vs_Clouds" height="200" width="200">
+                <img class="img-thumbnail" src="Images/Latitude_vs_Wind.png" alt="Latitude_vs_Wind" height="200" width="200">
+              </div>
+        </div>
+        
+  
+
+      </div>
+
+      <div class="container-fluid" id="Comparison">
+          <h1 class="text-success">WeatherPy Global: Comparison</h1>
+          <hr>
+          <div class="row">
+              <div class="col-lg-6">
+                <h3 class="text-success">Latitude vs Max Temperature</h3>
+                <span class="border border-black">
+                  
+                  <img class="img-thumbnail" src="Images/Latitude_vs_Temp.png" alt="Latitude_vs_Temp" height="600" width="600">
+                  </span>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="text-success">Latitude vs Humidity</h3>
+                    <span class="border border-black">
+                    
+                      <img class="img-thumbnail" src="Images/Latitude_vs_Humidity.png" alt="Latitude_vs_Humidity" height="600" width="600">
+                      </span>
+                    </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-6">
+                <h3 class="text-success">Latitude vs Cloudiness</h3>
+                <span class="border border-black">
+                  
+                  <img class="img-thumbnail" src="Images/Latitude_vs_Clouds.png" alt="Latitude_vs_Clouds" height="600" width="600">
+                  </span>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="text-success">Latitude vs Wind Speed</h3>
+                    <span class="border border-black">
+                      
+                      <img class="img-thumbnail" src="Images/Latitude_vs_Wind.png" alt="Latitude_vs_Wind" height="600" width="600">
+                      </span>
+                    </div>
+          </div>
+      </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+
